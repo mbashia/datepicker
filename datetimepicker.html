@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js”></script>
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+    <link  rel=”stylesheet”  href=”https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css”   />
+</head>
+<body>
+    <h1 style="color:green">GeeksforGeeks</h1>
+    <p>jQuery - Set datetimepicker on textbox click</p>
+  
+    <input type="text" 
+           class="datetimepicker" />
+    <input type="text"
+           class="datetimepicker" />
+      
+    <script type="text/javascript">
+      $(".datetimepicker").each(function () {
+        $(this).datetimepicker();
+      });
+    </script>
+    
+</body>
+</html>

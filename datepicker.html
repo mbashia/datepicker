@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href=
+    'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+              rel='stylesheet'>
+          
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" >
+        </script>
+          
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" >
+        </script>
+
 </head>
 <body>
-    
+    <p>this is a practice again</p>
+    <h4>Date Of Birth:
+        <input type="datetime-local" id="Test_DatetimeLocal">
+    </h4>
+    Date: <input type="text" id="my_date_picker">
+
+
+    <input type="text" 
+           class="datetimepicker" />
+    <input type="text"
+           class="datetimepicker" />
+
+         
+    <script>
+        $(document).ready(function() {
+          
+            $(function() {
+                $( "#my_date_picker" ).datepicker();
+            });
+        })
+    </script>
+       <script type="text/javascript">
+        $(".datetimepicker").each(function () {
+          $(this).datetimepicker();
+        });
+      </script>
 </body>
 </html>
