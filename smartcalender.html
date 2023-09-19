@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.8.0/webcomponents-loader.min.js
+    "></script>
+    <script type="module">
+    import smarthtmlelementssmartCalendar from 'https://cdn.jsdelivr.net/npm/@smarthtmlelements/smart-calendar@6.2.0/+esm'
+    </script>
+    <script type="module">
+        import smarthtmlelementssmartCalendar from 'https://cdn.jsdelivr.net/npm/@smarthtmlelements/smart-calendar@6.2.0/+esm'
+        </script>
+</head>
+<body>
+    date:
+    <smart-date-time-picker id="datetimepicker"></smart-date-time-picker>
+    <script type="module">
+		Smart('#datetimepicker', class {
+			get properties() {
+				return { value: new Date(2020, 5, 11)}
+			}
+		});
+	</script>
+</body>
+</html>
+
+
+
+<label class="form-label" for="datetimepicker">Start Date</label>
+<input class="form-control datetimepicker flatpickr-input" id="datetimepicker" type="text" placeholder="dd/mm/yyyy hour : minute" data-options="{&quot;enableTime&quot;:true,&quot;dateFormat&quot;:&quot;d/m/y H:i&quot;,&quot;disableMobile&quot;:true}" readonly="readonly">
